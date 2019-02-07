@@ -19,7 +19,8 @@ public class TestRunner
 	 */
 	private static String[] testClasses = {
 			"AnimalTest",
-
+			"ZooTest",
+			"EquipmentTest"
 	};
 
 	/**

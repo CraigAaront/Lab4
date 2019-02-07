@@ -21,7 +21,20 @@ public class AnimalTest
         Assert.assertEquals(0, animal.getHeight(), 0.01);
         Assert.assertEquals(0, animal.getWeight(), 0.01);
     }
+	public void testConstructorParams() throws AssertException
+	{
+		String color1 = "blue";
+		String name1 = "john";
+		double weight1 = 20.0;
+		double height1 = 20.0;
+		Animal ani1 = new Animal(color1, name1, weight1, height1);
+		
+		Assert.assertEquals(color1, ani1.getColor());
+		Assert.assertEquals(name1, ani1.getName());
+		Assert.assertEquals(weight1, ani1.getWeight());
+		Assert.assertEquals(height1, ani1.getHeight());
 
+	}
     // TODO: test full constructor, getters, and toString
 }
 
