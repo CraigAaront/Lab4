@@ -42,6 +42,34 @@ public class AnimalTest
 		String actual = ani1.toString();
 		Assert.assertEquals(expected, actual);
 	}
+	public void testGetName() throws AssertException
+	{
+		Animal ani1 = new Animal("blue", "john", 20.0, 20.0);
+		String expected = "john";
+		String actual = ani1.getName();
+		Assert.assertEquals(expected, actual);
+	}
+	public void testGetColor() throws AssertException
+	{
+		Animal ani1 = new Animal("blue", "john", 20.0, 20.0);
+		String expected = "blue";
+		String actual = ani1.getColor();
+		Assert.assertEquals(expected, actual);
+	}
+	public void testGetWeight() throws AssertException
+	{
+		Animal ani1 = new Animal("blue", "john", 20.0, 20.0);
+		double expected = 20.0;
+		double actual = ani1.getWeight();
+		Assert.assertEquals(expected, actual);
+	}
+	public void testGetHeight() throws AssertException
+	{
+		Animal ani1 = new Animal("blue", "john", 20.0, 20.0);
+		double expected = 20.0;
+		double actual = ani1.getHeight();
+		Assert.assertEquals(expected, actual);
+	}
     // TODO: test full constructor, getters, and toString
 }
 
