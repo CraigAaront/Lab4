@@ -35,6 +35,13 @@ public class AnimalTest
 		Assert.assertEquals(height1, ani1.getHeight());
 
 	}
+	public void testToString() throws AssertException
+	{
+		Animal ani1 = new Animal("blue", "john", 20.0, 20.0);
+		String expected = ("john, a blue-colored animal. 20.0 pounds, 20.0 inches\n");
+		String actual = ani1.toString();
+		Assert.assertEquals(expected, actual);
+	}
     // TODO: test full constructor, getters, and toString
 }
 
